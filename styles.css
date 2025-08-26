@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: beige;
+}
+
+header{
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(63, 63, 63);
+    color: white;
+    font-family: monospace;
+    padding: 10px;
+}
+
+div{
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    background-color: lightgoldenrodyellow;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#start{
+    height: 20%;
+    width: 20%;
+    font-size: 2rem;
+    border-radius: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    background-color: rgb(40, 182, 40);
+    transform: all 0.3s ease;
+    color: white;
+}
+
+#start:hover{
+    background-color: rgb(85, 136, 85);
+    cursor: pointer;
+}
+
+input{
+    height: auto;
+    padding: 5px;
+    padding-right: 10px;
+}
+
+label{
+    width: 90%;
+    height: 10%;
+    background-color: rgb(109, 108, 108);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+h2{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+label:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+.submit, .next, .restart{
+    background-color: green;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(40, 182, 40);
+    transform: all 0.3s ease;
+    color: white;
+}
+
+.submit:hover, .next:hover{
+    background-color: rgb(126, 202, 126);
+    cursor: pointer;
+}
+
+.score{
+    font-family: Impact;
+    letter-spacing: 5px;
+}
+
+.restart{
+    background-color: black;
+}
+
+.restart:hover{
+    background-color: rgb(54, 54, 54);
+}
+
+
+@media(max-width: 600px){
+    div{
+        width: 300px;
+    }
+}
